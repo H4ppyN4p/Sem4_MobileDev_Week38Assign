@@ -7,6 +7,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 //imports firebase
 import { app, database } from './firebase'
 import { collection, addDoc } from 'firebase/firestore';
+import { storage } from './firebase'
+import { ref, uploadBytes } from 'firebase/storage'
 
 //Components
 import HomePage from './components/HomePage'
